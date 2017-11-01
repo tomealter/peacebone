@@ -1,0 +1,10 @@
+// @file
+// Create puesdo Block
+@mixin pseudoblock($position: before, $display: inline-block) {
+  &:#{$position} {
+    content: '';
+    display: $display;
+    // Rules above set via pusedoblock mixin
+    @content
+  }
+}

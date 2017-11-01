@@ -1,0 +1,14 @@
+.l-constrain {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+
+  &.l-constrain--narrow {
+    max-width: 900px; 
+  }
+
+  //kill padding incase an l-constrain falls inside another
+  .l-constrain {
+    padding: 0;
+  }
+} 
